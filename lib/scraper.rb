@@ -16,13 +16,12 @@ class Scraper
   def get_courses
     # responsible for using a CSS selector to grab all of the HTML elements that contain a course
     # examine the page with the element inspector to find the CSS selector that contains the courses
-    doc.css(".post")
+    # doc.css(".post")
   end
   
   def make_courses
     # responsible for actually instantiating Course objects and giving each course object the correct title, schedule and description attribute
-    doc.css(".post").first.css("h2").text
-    doc.css(".post").first.css(".date").text
+   
   end
   
   def print_courses

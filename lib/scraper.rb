@@ -12,7 +12,7 @@ class Scraper
   
   def get_courses
     # responsible for using a CSS selector to grab all of the HTML elements that contain a course
-    # 
+    # examine the page with the element inspector to find the CSS selector that contains the courses
   end
   
   def make_courses

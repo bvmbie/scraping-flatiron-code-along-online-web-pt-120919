@@ -22,6 +22,7 @@ class Scraper
   def make_courses
     # responsible for actually instantiating Course objects and giving each course object the correct title, schedule and description attribute
     doc.css(".post").first.css("h2").text
+    doc.css(".post").first.css(".date").text
   end
   
   def print_courses
